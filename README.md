@@ -1,4 +1,4 @@
-Jivosite widget plugin
+Jivosite widget plugin for Yii2
 ======================
 Jivosite widget plugin
 
@@ -28,4 +28,19 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \tugmaks\Jivosite\AutoloadExample::widget(); ?>```
+<?= \tugmaks\Jivosite\Chat::widget(['widgetId'=>'XXXXXXX']); ?>```
+
+Or you can set widgetId in application params yii-application/common/config/params-local.php
+
+```php
+<?php
+return [
+    'jivosite.widgetId'=>'ZfIbRy0uHr'
+]; ?>```
+
+And call widget like this
+
+```php
+<?= \tugmaks\Jivosite\Chat::widget(); ?>```
+
+Widget can be called in any view or layout
