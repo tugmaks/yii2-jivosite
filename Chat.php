@@ -3,12 +3,19 @@
 namespace tugmaks\Jivosite;
 
 /**
- * This is just an example.
+ * Jivosite chat widget
  */
-class AutoloadExample extends \yii\base\Widget
+class Chat extends \yii\base\Widget
 {
+    public $widgetId;
+    public function init()
+    {
+        parent::init();
+        
+    }
+    
     public function run()
     {
-        return "Hello!";
+        echo $this->widgetId;
     }
 }
