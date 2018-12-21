@@ -28,7 +28,8 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \tugmaks\Jivosite\Chat::widget(['widgetId'=>'XXXXXXX']); ?>```
+<?= \tugmaks\Jivosite\Chat::widget(['widgetId'=>'XXXXXXX']); ?>
+```
 
 Or you can set widgetId in application params yii-application/common/config/params-local.php
 
@@ -36,11 +37,13 @@ Or you can set widgetId in application params yii-application/common/config/para
 <?php
 return [
     'jivosite.widgetId'=>'ZfIbRy0uHr'
-]; ?>```
+]; ?>
+```
 
 And call widget like this
 
 ```php
-<?= \tugmaks\Jivosite\Chat::widget(); ?>```
+<?= \tugmaks\Jivosite\Chat::widget(); ?>
+```
 
 Widget can be called in any view or layout
